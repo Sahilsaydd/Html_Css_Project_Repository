@@ -1,0 +1,139 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Roboto",sans-serif;
+}
+
+.navbar{
+    margin-top: 10px;
+width:100%;
+height:80px;
+background:#ffffff;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 40px;
+}
+.logo h1{
+color:#0b0a08;
+cursor:pointer;
+}
+
+.logo h1:hover{
+    color: #2887ff;
+border-bottom:2px solid orange;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    list-style: none;
+    gap:70px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #0b0a08;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav-list li a:hover{
+    color: #2887ff;
+}
+
+/* .mobile-btn button{
+  padding: 18px 35px;
+  border-radius: 40%;
+
+} */
+
+.mobile-btn button{
+padding: 16px 32px;
+background-color:#2b7fff;
+color:white;
+border:none;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.mobile-btn button:hover{
+background-color:#1a5edb;
+transform:scale(1.05);
+}
+
+
+.menu-icon{
+color:black;
+font-size:25px;
+cursor:pointer;
+position: relative;
+right: 0px;
+display:none;
+}
+
+
+@media(max-width:768px){
+
+    .navbar{
+        background-color: #2887ff;
+        color: #ffffff;
+    }
+.nav-list{
+   background-color: #2887ff;
+   
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding-bottom: 20px;
+    gap: 40px;
+}
+.mobile-btn button{
+   background-color: #0b0a08;
+   color: #ffffff;
+    padding: 8px 16px;
+}
+
+
+
+.logo h1{
+    color: #ffffff;
+    
+}
+.nav-list a{
+    color: #ffffff;
+}
+.nav-list li a:hover{
+    color:#ffffff;
+}
+
+.nav-list.active{
+    display: flex;
+}
+
+.menu-icon{
+display:block;
+}
+
+
+
+
+}
+
+
+/* section 1 design */
+
+.section_1{
+    height: auto;
+    width: 100%;
+    background-image:url('./images/road2.jpg');
+    background-repeat: no-repeat;
+    background-size: 90;
+}

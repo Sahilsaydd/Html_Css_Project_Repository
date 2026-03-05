@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Travel</title>
+    
+<link rel="stylesheet" href="style.css">
+
+<script src="https://kit.fontawesome.com/692746c225.js" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+    
+   <nav class="navbar" >
+
+        
+<div class="logo">
+<h1 data-aos="zoom-in" data-aos-delay="300">BusTraveller</h1>
+</div>
+   <ul class="nav-list" id="navMenu">
+     <li><a href="/Home">Home</a></li>
+     <li><a href="/About">About</a></li>
+     <li><a href="/Tour">Tour</a></li>
+     <li><a href="/Packages">Packages</a></li>
+     <li><a href="/Contact">Contact Us</a></li>
+       <li class="mobile-btn">
+    <button>Book Trip</button>
+  </li>
+   </ul>
+
+   
+
+   <div class="menu-icon" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+   </nav>
+    
+
+
+
+<!--Section 1-->
+<div class="section_1">
+    
+</div>
+
+
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+    AOS.init({
+duration:2000
+});
+</script>
+</body>
+</html>
