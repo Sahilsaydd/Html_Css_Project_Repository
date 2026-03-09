@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Successful</title>
+
+<script src="https://kit.fontawesome.com/692746c225.js" crossorigin="anonymous"></script>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f5f7fa;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.success-box{
+background:white;
+padding:40px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+width:400px;
+}
+
+.success-box i{
+font-size:70px;
+color:#28a745;
+margin-bottom:20px;
+}
+
+.success-box h1{
+color:#333;
+}
+
+.success-box p{
+color:#666;
+margin:15px 0;
+}
+
+.success-box button{
+padding:10px 20px;
+border:none;
+background:#0077ff;
+color:white;
+border-radius:8px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="success-box">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h1 id="username"></h1>
+
+<p id="tripdetails"></p>
+
+<button onclick="goHome()">Back to Home</button>
+
+</div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const name = params.get("username");
+const destination = params.get("destination");
+const date = params.get("date");
+console.log(name, destination, date);
+document.getElementById("username").innerText =
+"Thank you " + (name ? name : "Traveller") + "!";
+
+document.getElementById("tripdetails").innerText =
+"Your trip to " + (destination ? destination : "your destination") +
+" on " + (date ? date : "selected date") +
+" has been booked successfully.";
+
+function goHome(){
+window.location.href="index.html";
+}
+
+</script>
+
+</body>
+</html>
