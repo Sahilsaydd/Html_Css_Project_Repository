@@ -1,77 +1,252 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus Travel</title>
-    
-<link rel="stylesheet" href="style.css">
 
-<script src="https://kit.fontawesome.com/692746c225.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-</head>
-<body>
-    
-   <nav class="navbar" data-aos="fade-down" >
+    <script
+      src="https://kit.fontawesome.com/692746c225.js"
+      crossorigin="anonymous"
+    ></script>
 
-        
-<div class="logo">
-<h1 data-aos="zoom-in" data-aos-delay="300">BusTraveller</h1>
-</div>
-   <ul class="nav-list" id="navMenu">
-     <li><a href="/Home">Home</a></li>
-     <li><a href="/About">About</a></li>
-     <li><a href="/Tour">Tour</a></li>
-     <li><a href="/Packages">Packages</a></li>
-     <li><a href="/Contact">Contact Us</a></li>
-       <li class="mobile-btn">
-    <button data-aos="zoom-in">Book Trip</button>
-  </li>
-   </ul>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="navbar" data-aos="fade-down">
+      <div class="logo">
+        <h1 data-aos="zoom-in" data-aos-delay="300">BusTraveller</h1>
+      </div>
+      <ul class="nav-list" id="navMenu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Tour.html">Tour</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li class="mobile-btn">
+          <button data-aos="zoom-in"><a href="/book.html">Book Trip</a></button>
+        </li>
+      </ul>
 
-   
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
 
-   <div class="menu-icon" onclick="toggleMenu()">
-<i class="fa-solid fa-bars"></i>
-</div>
-
-   </nav>
-    
-
-
-
-<!--Section 1-->
-<section class="section1" data-aos="zoom-in">
-    <div class="main_img">
+    <!--Section 1-->
+    <section class="section1" data-aos="zoom-in" id="#Home">
+      <div class="main_img">
         <div class="div1" data-aos="fade-right" data-aos-delay="500">
-            <h3><b>BUS YOUR TREVEL JOURNEY</b></h3>
-            <h1><b>Where Every Bus Ride Feels Magical!</b></h1>
-            <button class="mobile-btn1">Book A Trip Now</button>
-            <button class="mobile-btn1"><i class="fa-solid fa-play"></i></button>
-
+          <h3><b>BUS YOUR TREVEL JOURNEY</b></h3>
+          <h1><b>Where Every Bus Ride Feels Magical!</b></h1>
+          <button class="mobile-btn1">Book A Trip Now</button>
+          <button class="mobile-btn1"><i class="fa-solid fa-play"></i></button>
         </div>
         <div class="div2" data-aos="zoom-in" data-aos-delay="1000">
-            <img src='./images/bus.png' height="90%" width="90%" alt="Bus Image">
+          <img
+            src="./images/bus.png"
+            height="70%"
+            width="70%"
+            alt="Bus Image"
+          />
         </div>
+      </div>
+    </section>
+
+    <!--About Section-->
+    <div class="about_section" data-aos="fade-down">
+      <h1>Popular Destination</h1>
+      <p>Discover the Most Loved Destination Around the Globe</p>
     </div>
-</section>
 
+    <div class="About_card_section">
+      <div class="Aboutcard1" data-aos="fade-left">
+        <div class="cardsub1">
+          <img src="./images/card1.jpg" height="100%" width="100%" alt="" />
+        </div>
+        <div class="cardsub2">
+          <p style="font-size: 20px">Sacred Calm at Badrinath Temple</p>
+          <p style="color: #8b8b8b">Badrinath, Uttarakhand, India</p>
+          <p>
+            <button><i class="fa-solid fa-star">4.7</i></button>
+          </p>
+        </div>
+      </div>
+      <div class="Aboutcard2" data-aos="zoom-in">
+        <div class="cardsub3">
+          <img src="./images/card2.jpg" height="100%" width="100%" alt="" />
+        </div>
+        <div class="cardsub2">
+          <p style="font-size: 20px">Divine Majesty at Jagannath Temple.</p>
+          <p style="color: #8b8b8b">Puri, Odisha, India</p>
+          <p>
+            <button><i class="fa-solid fa-star">4.8</i></button>
+          </p>
+        </div>
+      </div>
+      <div class="Aboutcard3" data-aos="fade-right">
+        <div class="cardsub4">
+          <img src="./images/card3.jpg" height="100%" width="100%" alt="" />
+        </div>
+        <div class="cardsub2">
+          <p style="font-size: 20px">Sacred Calm at Badrinath Temple</p>
+          <p style="color: #8b8b8b">Badrinath, Uttarakhand, India</p>
+          <p>
+            <button><i class="fa-solid fa-star">4.7</i></button>
+          </p>
+        </div>
+      </div>
+    </div>
 
-<script>
-function toggleMenu(){
-document.getElementById("navMenu").classList.toggle("active");
-}
-</script>
+    <!--Section 3-->
+    <div class="Section3" data-aos="zoom-in">
+      <div class="section3_sub1">
+        <img src="./images/showcase.jpg" height="100%" width="100%" alt="" />
+      </div>
+      <div class="section3_sub2">
+        <div>
+          <h1>Ignite Your Wanderlust with Every Bus Ride</h1>
+          <p>
+            Traveling by bus offers comfort and stunning views on your way to
+            amazing destinations. With spacious seats and air conditioning, you
+            can relax and enjoy the ride, whether you're heading to a vibrant
+            city or a peaceful getaway. It’s the perfect way to travel
+            affordably and conveniently while experiencing the beauty of the
+            journey.
+          </p>
+          <p>
+            Explore the World by Bus with Ease Hop on a bus and experience the
+            joy of travel at your own pace. From comfortable seating to scenic
+            routes, our buses offer the perfect way to explore cities, nature,
+            and everything in between. Whether it's a quick trip or a long
+            adventure, sit back, relax, and enjoy the ride.
+          </p>
+          <button>Book A Trip Now</button>
+        </div>
+      </div>
+    </div>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <div class="section4">
+      <div class="section4sub1" data-aos="fade-left">
+        <h1><b>10+</b></h1>
+        <p>Years of Experience</p>
+      </div>
+      <div class="section4sub2" data-aos="fade-up">
+        <h1><b>12k</b></h1>
+        <p>Happy Clients</p>
+      </div>
+      <div class="section4sub3" data-aos="fade-right">
+        <h1><b>4.8</b></h1>
+        <p>Average Rating</p>
+      </div>
+    </div>
 
-<script>
+    <div class="section5">
+      <h1>
+        <b>Discover Peace, Culture, and Devotion with Our Temple Bus Travels</b>
+      </h1>
+      <p>Witness Stunning Landscapes from the Comfort of Your Bus Seat"</p>
+    </div>
 
-    AOS.init({
-duration:2000
-});
-</script>
-</body>
+    <div class="section6">
+      <div class="section6sub1">
+        <i class="fa-brands fa-chrome"></i>
+        <h2><b>Your Road, Your Story</b></h2>
+        <p>
+          Experience the freedom of travel with our comfortable and reliable bus
+          trips. Enjoy stunning views along the way while relaxing in spacious
+          seats. Whether it's a short trip or a long journey, our buses ensure a
+          smooth and enjoyable ride.
+        </p>
+      </div>
+      <div class="section6sub1">
+        <i class="fa-solid fa-ship"></i>
+        <h2><b>Coastal Wonders</b></h2>
+        <p>
+          Embark on a journey through the mesmerizing coastal wonders. Enjoy the
+          serene beauty of pristine beaches, stunning cliffs, and breathtaking
+          ocean views, all from the comfort of our bus. Let the coastal breeze
+          guide you to unforgettable destinations.
+        </p>
+      </div>
+      <div class="section6sub1">
+        <i class="fa-solid fa-mountain"></i>
+        <h2><b>Historic Landmarks</b></h2>
+        <p>
+          Explore the charm of historic landmarks on our specially curated bus
+          tours. Our comfortable buses will take you through iconic sites,
+          offering insights into their fascinating stories. Sit back, relax, and
+          immerse yourself in the rich history that each destination holds.
+        </p>
+      </div>
+    </div>
+    <footer class="footer" id="contact">
+      <div class="fdiv1">
+        <h3><b>BusTraveller</b></h3>
+        <p>
+          Explore the world with ease and excitement through our all-in-one bus
+          travel platform. Your journey begins here — where smooth planning
+          meets unforgettable road experiences.
+        </p>
+        <div class="social_media">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="fdiv1">
+        <h3><b>Quick Links</b></h3>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="fdiv1">
+        <h3>Contact Us</h3>
+
+        <div class="f_contact">
+          <a href="#"><i class="fa-solid fa-phone"></i> +91 9022805108</a>
+          <a href="#"
+            ><i class="fa-solid fa-envelope"></i> info@bustraveller.com</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</a
+          >
+          <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <div class="fdiv1">
+        <h3><b>Subscribe</b></h3>
+
+        <input type="email" name="" placeholder="Enter Your Email" id="" />
+        <br />
+        <button>Subscribe</button>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("active");
+      }
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://kit.fontawesome.com/692746c225.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+
+<body>
+
+<nav class="navbar" data-aos="fade-down">
+
+<div class="logo">
+<h1>BusTraveller</h1>
+</div>
+
+<ul class="nav-list" id="navMenu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="tour.html">Tour</a></li>
+<li><a href="packages.html">Packages</a></li>
+<li><a href="#contact">Contact Us</a></li>
+ <li class="mobile-btn">
+  <button data-aos="zoom-in">Book Trip</button>
+</li>
+</ul>
+
+<div class="menu-icon" onclick="toggleMenu()">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+
+<!--About Section-->
+<div class="about_section" data-aos="fade-down">
+  <h1>Popular Destination</h1>
+  <p>Discover the Most Loved Destination Around the Globe</p>
+</div>
+
+
+<div class="About_card_section">
+  <div class="Aboutcard1"  data-aos="fade-left">
+    <div class="cardsub1">
+      <img src="./images/card1.jpg" height="100%" width="100%" alt="">
+    </div>
+    <div class="cardsub2">
+      <p style="font-size: 20px;">Sacred Calm at Badrinath Temple</p>
+      <p style="color: #8b8b8b;">Badrinath, Uttarakhand, India</p>
+      <p><button> <i class="fa-solid fa-star">4.7</i></button></p>
+    </div>
+  </div>
+  <div class="Aboutcard2" data-aos="zoom-in">
+     <div class="cardsub3">
+      <img src="./images/card2.jpg" height="100%" width="100%" alt="">
+     </div>
+    <div class="cardsub2">
+      <p style="font-size: 20px;">Divine Majesty at Jagannath Temple.</p>
+      <p style="color: #8b8b8b;">Puri, Odisha, India</p>
+      <p><button> <i class="fa-solid fa-star">4.8</i></button></p>
+    </div>
+  </div>
+  <div class="Aboutcard3" data-aos="fade-right">
+      <div class="cardsub4">
+      <img src="./images/card3.jpg" height="100%" width="100%" alt="">
+      </div>
+    <div class="cardsub2">
+      <p style="font-size: 20px;">Sacred Calm at Badrinath Temple</p>
+      <p style="color: #8b8b8b;">Badrinath, Uttarakhand, India</p>
+      <p><button> <i class="fa-solid fa-star">4.7</i></button></p>
+    </div>
+  </div>
+</div>
+
+ <footer class="footer" id="contact">
+      <div class="fdiv1">
+        <h3><b>BusTraveller</b></h3>
+        <p>
+          Explore the world with ease and excitement through our all-in-one bus
+          travel platform. Your journey begins here — where smooth planning
+          meets unforgettable road experiences.
+        </p>
+        <div class="social_media">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="fdiv1">
+        <h3><b>Quick Links</b></h3>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="fdiv1">
+        <h3>Contact Us</h3>
+
+        <div class="f_contact">
+          <a href="#"><i class="fa-solid fa-phone"></i> +91 9022805108</a>
+          <a href="#"
+            ><i class="fa-solid fa-envelope"></i> info@bustraveller.com</a
+          >
+          <a href="#"
+            ><i class="fa-solid fa-location-dot"></i> Pune, Maharashtra</a
+          >
+          <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <div class="fdiv1">
+        <h3><b>Subscribe</b></h3>
+
+        <input type="email" name="" placeholder="Enter Your Email" id="" />
+        <br />
+        <button>Subscribe</button>
+      </div>
+    </footer>
+<script>
+function toggleMenu(){
+document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+    AOS.init({
+duration:2000
+});
+</script>
+</body>
+</html>
